@@ -14,13 +14,20 @@
     <script>
     $(function(){
        $("#btn").click(function(){ 
-           alert("tttttt");
+           $("#box").stop().animate({
+              "left":"200px"
+           });
        });
     });
     </script>
-</head>
+    <style>
+        .box{ width: 100px; height: 100px; background-color: aqua;
+            position: absolute;}
+    </style> 
+    </head>
 <body>
    <input type="button" value="클릭" onclick="abc();"> 
    <input type="button" value="애니" id="btn"> 
+   <div class="box" id="box"></div>
 </body>
 </html>
